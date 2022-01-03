@@ -4,15 +4,15 @@
 sudo mdutil -i off -a
 
 #Create new account
-sudo dscl . -create /Users/vncuser
-sudo dscl . -create /Users/vncuser UserShell /bin/bash
-sudo dscl . -create /Users/vncuser RealName "VNC User"
-sudo dscl . -create /Users/vncuser UniqueID 1001
-sudo dscl . -create /Users/vncuser PrimaryGroupID 80
-sudo dscl . -create /Users/vncuser NFSHomeDirectory /Users/vncuser
-sudo dscl . -passwd /Users/vncuser $1
-sudo dscl . -passwd /Users/vncuser $1
-sudo createhomedir -c -u vncuser > /dev/null
+sudo dscl . -create /Users/Robinheqd
+sudo dscl . -create /Users/Robinheqd UserShell /bin/bash
+sudo dscl . -create /Users/Robinheqd RealName "Robin"
+sudo dscl . -create /Users/Robinheqd UniqueID 1001
+sudo dscl . -create /Users/Robinheqd PrimaryGroupID 80
+sudo dscl . -create /Users/Robinheqd NFSHomeDirectory /Users/Robinheqd
+sudo dscl . -passwd /Users/Robinheqd $1
+sudo dscl . -passwd /Users/Robinheqd $1
+sudo createhomedir -c -u Robinheqd > /dev/null
 
 #Enable VNC
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
